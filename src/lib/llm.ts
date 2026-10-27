@@ -8,8 +8,8 @@ const apiKey = process.env.LLM_API_KEY ?? process.env.NEBIUS_API_KEY;
 
 // Fast model for extraction, reasoning model for the recall match decision.
 // Exact IDs depend on the host's model list, so they are set per environment.
-export const FAST_MODEL = process.env.FAST_MODEL ?? "nvidia/nemotron-nano";
-export const REASONING_MODEL = process.env.REASONING_MODEL ?? "nvidia/nemotron-ultra";
+export const FAST_MODEL = process.env.FAST_MODEL ?? "nvidia/nemotron-3.5-lightning-30b-a3b";
+export const REASONING_MODEL = process.env.REASONING_MODEL ?? "nvidia/nemotron-3-ultra-550b-a55b";
 
 let client: OpenAI | null = null;
 
